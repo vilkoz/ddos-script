@@ -381,7 +381,7 @@ function installfixsoundmute {
 ######## Install Change Kali Login Wallpaper
 function installchangelogin {
 	echo -e "\e[1;31mThis option will change Kali Login Wallpaper!\e[0m"
-	echo -e "\e[1;31mPlace wallpaper that you want to make as Kali Login Wallpaper on Desktop\e[0m"
+	echo -e "\e[1;31mPlace wallpaper that you want to make as Kali Login Wallpaper in /home/ dir\e[0m"
 	echo -e "\e[1;31mAfter that, Rename it to "login-background.png" (.png format)\e[0m"
 	echo -e ""
 	echo -e "Do you want to change it ? (Y/N)"
@@ -390,8 +390,8 @@ function installchangelogin {
 				echo -e "\033[31m====== Changing Kali Login Wallpaper ======\033[m"
 				sleep 2
 				cd /usr/share/images/desktop-base/
-				mv login-backgroung.{png,png.bak}
-				mv /root/Desktop/login-background.png /usr/share/images/desktop-base/
+				mv login-background.{png,png.bak}
+				mv /home/login-background.png /usr/share/images/desktop-base/
 				echo -e "\033[32m====== Done Changing ======\033[m"
 			else
 				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
